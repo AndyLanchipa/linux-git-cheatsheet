@@ -21,3 +21,13 @@ Flags:
 Example:
 # mkdir <Sample directory>
 
+##Command -> rm
+
+What it does -> Removes files or directories
+
+Flags:
+# -r -> recursive (delete directories and their contents)
+# -f -> force (ignore prompts/errors)
+
+Example:
+# rm -rf-old_folder
