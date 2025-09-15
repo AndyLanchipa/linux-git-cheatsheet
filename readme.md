@@ -44,3 +44,13 @@ Flags:
 Example:
 #cp file.txt backup.txt
 
+##Command -> mv
+
+What it does -> moves or renames files and directories
+
+Flags:
+# -i -> prompt before overwrite 
+# -v -> verbose, show what is happening 
+
+Examples:
+# mv old.txt new.txt
