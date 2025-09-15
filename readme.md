@@ -67,3 +67,13 @@ Flags:
 
 Example: 
 # grep "main" file.txt
+
+##Command -> git status
+
+What it does -> shows the state of the working directory and stating area
+
+Flags:
+# none
+
+Example:
+# git status
