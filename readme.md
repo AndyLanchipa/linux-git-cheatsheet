@@ -54,3 +54,16 @@ Flags:
 
 Examples:
 # mv old.txt new.txt
+
+##Command -> grep
+
+What it does -> searches for text patterns inside files
+
+Flags:
+# -i -> case-insensitive search
+# -r -> recursive, search through directories 
+# -n -> show line number
+# --color -> highlight matches
+
+Example: 
+# grep "main" file.txt
