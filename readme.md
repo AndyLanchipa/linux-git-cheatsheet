@@ -9,3 +9,7 @@ What does it do -> Prints the current working directory
 
 What does it do -> lists files and directories in the current directory
 
+##Command -> cd
+
+What does it do -> changes the current working directory 
+
