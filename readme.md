@@ -77,3 +77,16 @@ Flags:
 
 Example:
 # git status
+
+
+##Command -> git add
+
+What it does -> Stages changes so they're ready to be committed
+
+Flags:
+# . -> add everyrthing in the current directory
+# <file> -> add a specific file
+# -p -> interactively choose hunks of changes
+
+Example:
+# git add file.txt
