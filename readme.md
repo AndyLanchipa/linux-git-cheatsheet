@@ -4,4 +4,8 @@ _Built in Vim, one branch per command._
 
 ##Command -> pwd
 What does it do -> Prints the current working directory
-Flags -> NONE
+
+##Command -> ls
+
+What does it do -> lists files and directories in the current directory
+
