@@ -31,3 +31,16 @@ Flags:
 
 Example:
 # rm -rf-old_folder
+
+##Command -> cp
+
+What it does -> copies files or directories
+
+Flags:
+# -r -> copy directories recursively
+# -v -> verbose, show files being copied
+# -i -> prompt before overwrite
+
+Example:
+#cp file.txt backup.txt
+
