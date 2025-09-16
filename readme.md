@@ -2,161 +2,169 @@
 
 _Built in Vim, one branch per command._
 
-## Command -> pwd
-What does it do -> Prints the current working directory
+### `pwd`
+**What it does:** Prints the current working directory.  
 
-## Command -> ls
+**Example:**
+```bash
+pwd
 
-What does it do -> lists files and directories in the current directory
+### `ls`
+**What it does:** Lists files and directories in the current directory.  
 
-## Command -> mkdir
+**Examples:**
+```bash
+ls
+ls -lah
 
-What does it do -> creates a new directory 
+### `mkdir`
+**What it does:** Creates a new directory.  
 
-Flags:
-# -p -> create parent directories if needed
-# -v -> print a message for each directory created
-# -m <mode> -> set permissions for the new directory, using chmod-style syntax
+**Flags:**
+- `-p` → create parent directories if needed  
+- `-v` → print a message for each directory created  
+- `-m <mode>` → set permissions for the new directory using chmod-style syntax  
 
-Example:
-# mkdir <Sample directory>
+**Example:**
+```bash
+mkdir -p sample_directory
 
-## Command -> rm
+### `rm`
+**What it does:** Removes files or directories.  
 
-What it does -> Removes files or directories
+**Flags:**
+- `-r` → recursive (delete directories and their contents)  
+- `-f` → force (ignore prompts/errors)  
 
-Flags:
-# -r -> recursive (delete directories and their contents)
-# -f -> force (ignore prompts/errors)
+**Example:**
+```bash
+rm -rf old_folder
 
-Example:
-# rm -rf-old_folder
+### `cp`
+**What it does:** Copies files or directories.  
 
-## Command -> cp
+**Flags:**
+- `-r` → copy directories recursively  
+- `-v` → verbose, show files being copied  
+- `-i` → prompt before overwrite  
 
-What it does -> copies files or directories
+**Example:**
+```bash
+cp file.txt backup.txt
 
-Flags:
-# -r -> copy directories recursively
-# -v -> verbose, show files being copied
-# -i -> prompt before overwrite
+### `mv`
+**What it does:** Moves or renames files and directories.  
 
-Example:
-#cp file.txt backup.txt
+**Flags:**
+- `-i` → prompt before overwrite  
+- `-v` → verbose, show what is happening  
 
-## Command -> mv
+**Example:**
+```bash
+mv old.txt new.txt
 
-What it does -> moves or renames files and directories
+### `grep`
+**What it does:** Searches for text patterns inside files.  
 
-Flags:
-# -i -> prompt before overwrite 
-# -v -> verbose, show what is happening 
+**Flags:**
+- `-i` → case-insensitive search  
+- `-r` → recursive, search through directories  
+- `-n` → show line numbers  
+- `--color` → highlight matches  
 
-Examples:
-# mv old.txt new.txt
-
-## Command -> grep
-
-What it does -> searches for text patterns inside files
-
-Flags:
-# -i -> case-insensitive search
-# -r -> recursive, search through directories 
-# -n -> show line number
-# --color -> highlight matches
-
-Example: 
-# grep "main" file.txt
-
-## Command -> git status
-
-What it does -> shows the state of the working directory and stating area
-
-Flags:
-# none
-
-Example:
-# git status
+**Example:**
+```bash
+grep "main" file.txt
 
 
-## Command -> git add
+### `git status`
+**What it does:** Shows the state of the working directory and staging area.  
 
-What it does -> Stages changes so they're ready to be committed
+**Flags:**  
+- _(none)_  
 
-Flags:
-# . -> add everyrthing in the current directory
-# <file> -> add a specific file
-# -p -> interactively choose hunks of changes
+**Example:**
+```bash
+git status
 
-Example:
-# git add file.txt
+### `git add`
+**What it does:** Stages changes so they're ready to be committed.  
 
-## Command -> git commit 
+**Flags:**
+- `.` → add everything in the current directory  
+- `<file>` → add a specific file  
+- `-p` → interactively choose hunks of changes  
 
-What it does -> Records stages changes into the repository history
-
-Flags:
-# -m -> add a commit message inline
-# -a -> automatically stage tracked files before committing
-# --amend -> change the most recent commit
-
-Example:
-# git commit -m "docs: add grep section"
+**Example:**
+```bash
+git add file.txt
 
 
+### `git commit`
+**What it does:** Records staged changes into the repository history.  
 
-## Command -> git log
+**Flags:**
+- `-m` → add a commit message inline  
+- `-a` → automatically stage tracked files before committing  
+- `--amend` → change the most recent commit  
 
-What it does: Shows the commit history of the repository.
-
-Flags:
-# `--oneline` → compact one-line output per commit
-# `--graph` → show ASCII graph of branches and merges
-# `--decorate` → show branch and tag names
-# `-p` → show the patch (changes) each commit introduced
-
-Examples:
-# git log
-# git log --oneline --graph --decorate
-# git log -p
-
-## Command -> git branch
-
-What does it do: Lists, creates, or deletes branches.
-
-Flags:
-# no flags → list branches
-# -d → delete a branch
-# -m → rename a branch
-
-Examples:
-# git branch
-# git branch new-feature
-# git branch -d old-feature
-# git branch -m old-name new-name
+**Example:**
+```bash
+git commit -m "docs: add grep section"
 
 
-## Command -> git switch
+### `git log`
+**What it does:** Shows the commit history of the repository.  
 
-What does it do: Switches between branches.
+**Flags:**
+- `--oneline` → compact one-line output per commit  
+- `--graph` → show ASCII graph of branches and merges  
+- `--decorate` → show branch and tag names  
+- `-p` → show the patch (changes) each commit introduced  
 
-Flags:
-# -c → create and switch to a new branch
+**Examples:**
+```bash
+git log
+git log --oneline --graph --decorate
+git log -p
 
-Examples:
-# git switch main
-# git switch -c feature-login
 
-## Command -> git merge
+### `git branch`
+**What it does:** Lists, creates, or deletes branches.  
 
-What does it do: Combines changes from another branch into the current branch.
+**Flags:**
+- _(no flags)_ → list branches  
+- `-d` → delete a branch  
+- `-m` → rename a branch  
 
-Flags:
-# --no-ff → create a merge commit even if fast-forward is possible
+**Examples:**
+```bash
+git branch
+git branch new-feature
+git branch -d old-feature
+git branch -m old-name new-name
 
-Examples:
-# git merge feature-branch
-# git merge --no-ff feature-branch
+### `git switch`
+**What it does:** Switches between branches.  
+
+**Flags:**
+- `-c` → create and switch to a new branch  
+
+**Examples:**
+```bash
+git switch main
+git switch -c feature-login
+
+### `git merge`
+**What it does:** Combines changes from another branch into the current branch.  
+
+**Flags:**
+- `--no-ff` → create a merge commit even if fast-forward is possible  
+
+**Examples:**
+```bash
+git merge feature-branch
+git merge --no-ff feature-branch
 
 ---
 
