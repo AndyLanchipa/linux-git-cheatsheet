@@ -102,3 +102,20 @@ Flags:
 
 Example:
 # git commit -m "docs: add grep section"
+
+
+
+##Command -> git log
+
+What it does: Shows the commit history of the repository.
+
+Flags:
+# `--oneline` → compact one-line output per commit
+# `--graph` → show ASCII graph of branches and merges
+# `--decorate` → show branch and tag names
+# `-p` → show the patch (changes) each commit introduced
+
+Examples:
+# git log
+# git log --oneline --graph --decorate
+# git log -p
