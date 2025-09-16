@@ -135,3 +135,15 @@ Examples:
 # git branch -d old-feature
 # git branch -m old-name new-name
 
+
+##Command -> git switch
+
+What does it do: Switches between branches.
+
+Flags:
+# -c → create and switch to a new branch
+
+Examples:
+# git switch main
+# git switch -c feature-login
+
