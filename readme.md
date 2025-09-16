@@ -158,3 +158,19 @@ Examples:
 # git merge feature-branch
 # git merge --no-ff feature-branch
 
+---
+
+### `git clone`
+**What it does:** Creates a local copy of a remote repository.  
+
+**Flags:**
+- `<url>` → clone from a remote URL (HTTPS or SSH)  
+- `<directory>` → optional, specify folder name for the clone  
+- `--branch <name>` → clone a specific branch  
+
+**Examples:**
+```bash
+git clone git@github.com:user/repo.git
+git clone https://github.com/user/repo.git my-folder
+git clone --branch main git@github.com:user/repo.git
+
