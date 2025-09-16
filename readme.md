@@ -147,3 +147,14 @@ Examples:
 # git switch main
 # git switch -c feature-login
 
+##Command -> git merge
+
+What does it do: Combines changes from another branch into the current branch.
+
+Flags:
+# --no-ff → create a merge commit even if fast-forward is possible
+
+Examples:
+# git merge feature-branch
+# git merge --no-ff feature-branch
+
