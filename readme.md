@@ -119,3 +119,19 @@ Examples:
 # git log
 # git log --oneline --graph --decorate
 # git log -p
+
+##Command -> git branch
+
+What does it do: Lists, creates, or deletes branches.
+
+Flags:
+# no flags → list branches
+# -d → delete a branch
+# -m → rename a branch
+
+Examples:
+# git branch
+# git branch new-feature
+# git branch -d old-feature
+# git branch -m old-name new-name
+
