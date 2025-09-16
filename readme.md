@@ -2,10 +2,10 @@
 
 _Built in Vim, one branch per command._
 
-##Command -> pwd
+## Command -> pwd
 What does it do -> Prints the current working directory
 
-##Command -> ls
+## Command -> ls
 
 What does it do -> lists files and directories in the current directory
 
@@ -21,7 +21,7 @@ Flags:
 Example:
 # mkdir <Sample directory>
 
-##Command -> rm
+## Command -> rm
 
 What it does -> Removes files or directories
 
@@ -32,7 +32,7 @@ Flags:
 Example:
 # rm -rf-old_folder
 
-##Command -> cp
+## Command -> cp
 
 What it does -> copies files or directories
 
@@ -44,7 +44,7 @@ Flags:
 Example:
 #cp file.txt backup.txt
 
-##Command -> mv
+## Command -> mv
 
 What it does -> moves or renames files and directories
 
@@ -55,7 +55,7 @@ Flags:
 Examples:
 # mv old.txt new.txt
 
-##Command -> grep
+## Command -> grep
 
 What it does -> searches for text patterns inside files
 
@@ -68,7 +68,7 @@ Flags:
 Example: 
 # grep "main" file.txt
 
-##Command -> git status
+## Command -> git status
 
 What it does -> shows the state of the working directory and stating area
 
@@ -79,7 +79,7 @@ Example:
 # git status
 
 
-##Command -> git add
+## Command -> git add
 
 What it does -> Stages changes so they're ready to be committed
 
@@ -91,7 +91,7 @@ Flags:
 Example:
 # git add file.txt
 
-##Command -> git commit 
+## Command -> git commit 
 
 What it does -> Records stages changes into the repository history
 
@@ -105,7 +105,7 @@ Example:
 
 
 
-##Command -> git log
+## Command -> git log
 
 What it does: Shows the commit history of the repository.
 
@@ -120,7 +120,7 @@ Examples:
 # git log --oneline --graph --decorate
 # git log -p
 
-##Command -> git branch
+## Command -> git branch
 
 What does it do: Lists, creates, or deletes branches.
 
@@ -136,7 +136,7 @@ Examples:
 # git branch -m old-name new-name
 
 
-##Command -> git switch
+## Command -> git switch
 
 What does it do: Switches between branches.
 
@@ -147,7 +147,7 @@ Examples:
 # git switch main
 # git switch -c feature-login
 
-##Command -> git merge
+## Command -> git merge
 
 What does it do: Combines changes from another branch into the current branch.
 
