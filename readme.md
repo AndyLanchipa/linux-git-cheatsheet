@@ -8,6 +8,7 @@ _Built in Vim, one branch per command._
 **Example:**
 ```bash
 pwd
+```
 
 ### `ls`
 **What it does:** Lists files and directories in the current directory.  
@@ -16,6 +17,7 @@ pwd
 ```bash
 ls
 ls -lah
+```
 
 ### `mkdir`
 **What it does:** Creates a new directory.  
@@ -28,6 +30,7 @@ ls -lah
 **Example:**
 ```bash
 mkdir -p sample_directory
+```
 
 ### `rm`
 **What it does:** Removes files or directories.  
@@ -39,6 +42,7 @@ mkdir -p sample_directory
 **Example:**
 ```bash
 rm -rf old_folder
+```
 
 ### `cp`
 **What it does:** Copies files or directories.  
@@ -51,6 +55,7 @@ rm -rf old_folder
 **Example:**
 ```bash
 cp file.txt backup.txt
+```
 
 ### `mv`
 **What it does:** Moves or renames files and directories.  
@@ -62,6 +67,7 @@ cp file.txt backup.txt
 **Example:**
 ```bash
 mv old.txt new.txt
+```
 
 ### `grep`
 **What it does:** Searches for text patterns inside files.  
@@ -75,7 +81,7 @@ mv old.txt new.txt
 **Example:**
 ```bash
 grep "main" file.txt
-
+```
 
 ### `git status`
 **What it does:** Shows the state of the working directory and staging area.  
@@ -86,6 +92,7 @@ grep "main" file.txt
 **Example:**
 ```bash
 git status
+```
 
 ### `git add`
 **What it does:** Stages changes so they're ready to be committed.  
@@ -98,7 +105,7 @@ git status
 **Example:**
 ```bash
 git add file.txt
-
+```
 
 ### `git commit`
 **What it does:** Records staged changes into the repository history.  
@@ -111,7 +118,7 @@ git add file.txt
 **Example:**
 ```bash
 git commit -m "docs: add grep section"
-
+```
 
 ### `git log`
 **What it does:** Shows the commit history of the repository.  
@@ -127,7 +134,7 @@ git commit -m "docs: add grep section"
 git log
 git log --oneline --graph --decorate
 git log -p
-
+```
 
 ### `git branch`
 **What it does:** Lists, creates, or deletes branches.  
@@ -143,6 +150,7 @@ git branch
 git branch new-feature
 git branch -d old-feature
 git branch -m old-name new-name
+```
 
 ### `git switch`
 **What it does:** Switches between branches.  
@@ -154,6 +162,7 @@ git branch -m old-name new-name
 ```bash
 git switch main
 git switch -c feature-login
+```
 
 ### `git merge`
 **What it does:** Combines changes from another branch into the current branch.  
@@ -165,6 +174,7 @@ git switch -c feature-login
 ```bash
 git merge feature-branch
 git merge --no-ff feature-branch
+```
 
 ---
 
@@ -181,4 +191,5 @@ git merge --no-ff feature-branch
 git clone git@github.com:user/repo.git
 git clone https://github.com/user/repo.git my-folder
 git clone --branch main git@github.com:user/repo.git
+```
 
