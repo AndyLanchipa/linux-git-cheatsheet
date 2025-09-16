@@ -90,3 +90,15 @@ Flags:
 
 Example:
 # git add file.txt
+
+##Command -> git commit 
+
+What it does -> Records stages changes into the repository history
+
+Flags:
+# -m -> add a commit message inline
+# -a -> automatically stage tracked files before committing
+# --amend -> change the most recent commit
+
+Example:
+# git commit -m "docs: add grep section"
